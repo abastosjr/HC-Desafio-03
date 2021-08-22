@@ -1,0 +1,32 @@
+.gallery {
+  width: 912px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.galleryItem--normal {
+  min-width: 350px;
+  max-width: 350px;
+  height: 600px;
+  margin: 12px auto;
+  background-color: #424242;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--layout--list-products-home {
+  margin: 0 auto;
+}
+
+.searchResultContainer--list-products-home {
+  min-width: 100%;
+  background-color: #303030;
+}
+
+.buttonShowMore {
+  margin-bottom: 60px;
+}

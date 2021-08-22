@@ -1,0 +1,15 @@
+.slideChildrenContainer--carousel {
+  background-color: #303030;
+  margin-top: 130px;
+  padding: 15px 0 30px 0;
+}
+
+.caretIcon--carousel {
+  margin: 5px 20vw 0;
+}
+
+.sliderLayoutContainer--carousel {
+  background-color: #303030;
+  align-items: flex-end;
+  justify-content: center;
+}

@@ -1,0 +1,48 @@
+.flexRowContent--header-layout {
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #212121;
+}
+
+.flexRowContent--main-header-mobile {
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #212121;
+}
+
+.flexRowContent--footer-layout {
+  height: 56px;
+  min-width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #424242;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--product {
+  width: 50%;
+  justify-content: center;
+  margin: 10px auto;
+  align-items: center;
+  text-align: center;
+}
+
+.flexRow--button {
+  max-width: 300px;
+  justify-content: center;
+  margin: 10px auto;
+  border-radius: 10px;
+}

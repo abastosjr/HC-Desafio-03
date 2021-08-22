@@ -1,0 +1,24 @@
+.searchBarContainer {
+  width: 550px;
+}
+
+.logoImage--banner {
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.logoLink--banner {
+  max-width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.productImagesContainer--carousel {
+  width: 50%;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.productNameContainer {
+  color: #ffffff;
+}

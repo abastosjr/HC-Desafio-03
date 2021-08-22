@@ -1,15 +1,216 @@
 {
-  "store.home": { 
-    "blocks": [
-      "rich-text"
+  "store.home": {
+    "blocks": ["tab-layout#home"]
+  },
+  "tab-layout#home": {
+    "children": ["tab-list#home", "slider-layout#home", "tab-content#home"],
+    "props": {
+      "defaultActiveTabId": "home"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#promocao",
+      "tab-list.item#corinthians",
+      "tab-list.item#palmeiras",
+      "tab-list.item#signos"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "tab-list.item#promocao": {
+    "props": {
+      "tabId": "promocao",
+      "label": "PROMOÇÃO",
+      "blockClass": "home"
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "CORINTHIANS",
+      "blockClass": "home"
+    }
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "PALMEIRAS",
+      "blockClass": "home"
+    }
+  },
+  "tab-list.item#signos": {
+    "props": {
+      "tabId": "signos",
+      "label": "SIGNOS",
+      "blockClass": "home"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home",
+      "tab-content.item#promocao",
+      "tab-content.item#corinthians",
+      "tab-content.item#palmeiras",
+      "tab-content.item#signos"
+    ]
+  },
+  "tab-content.item#home": {
+    "children": ["search-result-layout.customQuery#home"],
+    "props": {
+      "tabId": "home"
+    }
+  },
+  "tab-content.item#promocao": {
+    "children": ["search-result-layout.customQuery#promocao"],
+    "props": {
+      "tabId": "promocao"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": ["search-result-layout.customQuery#corinthians"],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+  "tab-content.item#palmeiras": {
+    "children": ["search-result-layout.customQuery#palmeiras"],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+  "tab-content.item#signos": {
+    "children": ["search-result-layout.customQuery#signos"],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+  "search-result-layout.customQuery#home": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "mapField": "productClusterIds",
+        "queryField": "157"
+      }
+    }
+  },
+  "search-result-layout.customQuery#promocao": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "mapField": "productClusterIds",
+        "queryField": "153"
+      }
+    }
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "mapField": "productClusterIds",
+        "queryField": "154"
+      }
+    }
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "mapField": "productClusterIds",
+        "queryField": "155"
+      }
+    }
+  },
+  "search-result-layout.customQuery#signos": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "mapField": "productClusterIds",
+        "queryField": "156"
+      }
+    }
+  },
+  "search-result-layout.desktop": {
+    "props": {
+      "blockClass": "list-products-home"
+    },
+    "children": [
+      // "breadcrumb.search",
+      "search-content",
+      "search-fetch-previous",
+      "search-products-count-per-page",
+      "search-fetch-more"
+    ]
+  },
+  "search-result-layout.mobile": {
+    "props": {
+      "blockClass": "list-products-home"
+    },
+    "children": [
+      // "breadcrumb.search",
+      "search-content",
+      "search-fetch-previous",
+      "search-products-count-per-page",
+      "search-fetch-more"
+    ]
+  },
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["logo#banner1", "logo#banner2"]
+  },
+
+  "logo#banner1": {
+    "props": {
+      "url": "assets/BANNER-WOOD.png",
+      "maxHeight": "320px",
+      "href": "/woodtrophie/p",
+      "blockClass": "banner"
+    }
+  },
+  "logo#banner2": {
+    "props": {
+      "url": "assets/BANNER-2.png",
+      "maxHeight": "320px",
+      "href": "/arqueiro/p",
+      "blockClass": "banner"
     }
   }
 }

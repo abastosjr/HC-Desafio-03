@@ -2,25 +2,23 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+  "flex-layout.row#footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "blockClass": "footer-layout"
+    },
+    "children": ["login", "logo#whatsapp"]
+  },
+  "logo#whatsapp": {
+    "props": {
+      "url": "https://icongr.am/material/whatsapp.svg?size=35&color=ffffff",
+      "width": "35px",
+      "href": "https://api.whatsapp.com/send?l=pt-BR&phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%F0%9F%91%B1%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%0A%0AClique%20enviar%F0%9F%91%89%0A%0A------------%0A*D%C3%BAvida%20sobre%3A*%20Etapa%20Bras%C3%A3o%20-%20Circuito%20Palmeiras%0A*ID%3A*%2052292"
     }
   }
 }
